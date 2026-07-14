@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-MANAGER</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+    <main>
+        <section id="section-1">
+            <div class="overall">
+                <div class="head">
+                    <h1>TASK MANAGER</h1>
+                    <i id="themeToggle" class="ri-sun-fill"></i>
+                    <div class="task">
+                        <input type="text" id="task-writer" name="task-writer" placeholder="Enter your task">
+                        <select id="taskCategory">
+                            <option value="Work">💼 Work</option>
+                            <option value="Personal">🏠 Personal</option>
+                            <option value="Office">🏢 Office</option>
+                        </select>
+                        <button id="addBtn">ADD</button>
+                        <input type="datetime-local" id="dueDateTime" name="dueDateTime" placeholder="Enter End Date">
+                        <select id="filterCategory">
+                            <option value="" selected disabled>All Category</option>
+                            <option value="Work">💼 Work</option>
+                            <option value="Personal">🏠 Personal</option>
+                            <option value="Office">🏢 Office</option>
+                        </select>
+                        <button id="clearBtn">Clear</button>
+                    </div>
+                </div>
+                <div class="task-data">
+
+                    <div class="total-data">
+                        <h2>Total Tasks</h2>
+                        <p>0</p>
+                    </div>
+
+                    <div class="total-data">
+                        <h2>Completed</h2>
+                        <p>0</p>
+                    </div>
+
+                    <div class="total-data">
+                        <h2>Remaining</h2>
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <div class="savedList">
+                    <ul id="taskList"></ul>
+                </div>
+
+                <div class="task-card">
+    <div class="task-info">
+        <h3>Complete JavaScript Project</h3>
+        <p>💼 Work</p>
+        <p>📅 20 Jun 2026, 6:00 PM</p>
+    </div>
+
+    <div class="task-actions">
+        <button class="editBtn">✏️ Edit</button>
+        <button class="completeBtn">✔ Complete</button>
+        <button class="deleteBtn">🗑 Delete</button>
+    </div>
+</div>
+            </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
